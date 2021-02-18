@@ -39,7 +39,7 @@ class BetterProfessorUITests: XCTestCase {
 
     func testSignUp() {
         let expectation = self.expectation(description: "User can sign up")
-        BackendController.shared.signUp(username: "Stephanie", password: "password", subject: "math", completion: { result, _, error in
+        BackendController.shared.signUp(username: "Stephanie", password: "password", department: "math", completion: { result, _, error in
             XCTAssertTrue(result)
             XCTAssertNil(error)
             expectation.fulfill()

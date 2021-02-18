@@ -53,7 +53,7 @@ class StudentTableViewController: UIViewController {
         //        fetchStudents1()
         UserDefaults.standard.isLoggedIn()
         if UserDefaults.standard.isLoggedIn() {
-        fetchStudents()
+            fetchedstudents()
         }
         //        fetchedstudents()
         tableView.tableFooterView = UIView()
